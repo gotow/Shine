@@ -13,7 +13,7 @@
 		redirect('application.php?id=' . $a->id);
 	}
 	
-	// Get a list of our apps
+	// Get a list of our apps from the database
 	$apps   = DBObject::glob('Application', 'SELECT * FROM shine_applications WHERE hidden = 0 ORDER BY name');
 	
 	// Get our recent orders
